@@ -1,0 +1,1272 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>王雨纯mm131 - 原创影像品牌_官方内容门户</title>
+<meta name="description" content="王雨纯mm131官方网站，专注原创影像与生活方式内容，聚合品牌故事、创作者矩阵与精品专题，为用户提供高品质视频内容生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f6f3ee'/%3E%3Cpath d='M24 18l22 14-22 14z' fill='%23b1442f'/%3E%3C/svg%3E">
+<style>
+:root{
+  --wyc-ink:#2a2320;
+  --wyc-soft:#6b5f58;
+  --wyc-paper:#f6f3ee;
+  --wyc-card:#fffdfa;
+  --wyc-line:#e5ddd2;
+  --wyc-accent:#b1442f;
+  --wyc-accent-soft:#edd8cd;
+  --wyc-teal:#3f6f63;
+  --wyc-gold:#c08a3e;
+  --wyc-shadow:0 14px 34px rgba(58,40,30,.10);
+  --wyc-radius:16px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:150px}
+body{
+  margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  color:var(--wyc-ink);
+  background:var(--wyc-paper);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+.wyc-skiplink{position:absolute;left:-9999px;top:0;background:var(--wyc-accent);color:#fff;padding:8px 16px;z-index:200}
+.wyc-skiplink:focus{left:8px;top:8px}
+
+/* ---------- 吸顶区 ---------- */
+.wyc-sticky{position:sticky;top:0;z-index:120}
+.wyc-notice{
+  background:linear-gradient(90deg,#2a2320,#4a3327 60%,#6b3a26);
+  color:#f6efe6;
+  font-size:13px;
+  letter-spacing:.02em;
+  padding:8px 0;
+  overflow:hidden;
+}
+.wyc-notice-inner{
+  max-width:1200px;margin:0 auto;padding:0 20px;
+  display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+}
+.wyc-notice-tag{
+  background:var(--wyc-accent);color:#fff;border-radius:999px;
+  padding:1px 10px;font-size:12px;font-weight:600;flex:none;
+}
+.wyc-notice-list{display:flex;gap:22px;flex-wrap:wrap}
+.wyc-notice-list li{list-style:none;position:relative;padding-left:14px}
+.wyc-notice-list li::before{content:"";position:absolute;left:0;top:.7em;width:5px;height:5px;border-radius:50%;background:var(--wyc-gold)}
+.wyc-notice-list strong{color:#f4c9a5;font-weight:600}
+
+.wyc-header{
+  background:rgba(246,243,238,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--wyc-line);
+}
+.wyc-header-inner{
+  max-width:1200px;margin:0 auto;padding:12px 20px;
+  display:flex;align-items:center;gap:22px;
+}
+.wyc-brand{display:flex;align-items:center;gap:10px;flex:none}
+.wyc-brand-mark{
+  width:42px;height:42px;border-radius:12px;flex:none;
+  background:radial-gradient(circle at 30% 25%,#e07a5f,#b1442f 70%);
+  display:grid;place-items:center;color:#fff;font-weight:700;font-size:17px;
+  box-shadow:0 6px 14px rgba(177,68,47,.32);
+}
+.wyc-brand-text b{display:block;font-size:17px;letter-spacing:.03em}
+.wyc-brand-text span{font-size:11px;color:var(--wyc-soft);letter-spacing:.16em}
+
+.wyc-nav{margin-left:auto;display:flex;align-items:center;gap:4px}
+.wyc-nav a{
+  padding:7px 12px;border-radius:9px;font-size:14.5px;color:var(--wyc-soft);
+  transition:.2s;white-space:nowrap;
+}
+.wyc-nav a:hover,.wyc-nav a.is-active{background:#efe7dc;color:var(--wyc-accent)}
+
+.wyc-search{
+  display:flex;align-items:center;gap:6px;
+  background:#fff;border:1px solid var(--wyc-line);border-radius:999px;
+  padding:4px 6px 4px 14px;flex:none;
+}
+.wyc-search input{
+  border:0;outline:0;background:transparent;font-size:13.5px;width:132px;
+  color:var(--wyc-ink);font-family:inherit;
+}
+.wyc-search button{
+  border:0;border-radius:999px;background:var(--wyc-accent);color:#fff;
+  padding:5px 13px;font-size:13px;
+}
+.wyc-search button:hover{background:#963825}
+.wyc-search-hint{font-size:12px;color:var(--wyc-soft);display:none}
+.wyc-search-hint.is-on{display:block}
+
+.wyc-burger{
+  display:none;border:1px solid var(--wyc-line);background:#fff;border-radius:10px;
+  width:40px;height:38px;font-size:17px;color:var(--wyc-ink);
+}
+
+/* ---------- 通用容器 ---------- */
+.wyc-wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.wyc-section{padding:64px 0}
+.wyc-section--tight{padding:48px 0}
+.wyc-sec-head{display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:30px}
+.wyc-sec-head h2{
+  font-size:clamp(20px,2.4vw,27px);margin:0;letter-spacing:.01em;
+}
+.wyc-sec-head h2 em{font-style:normal;color:var(--wyc-accent)}
+.wyc-sec-head p{margin:0;color:var(--wyc-soft);font-size:14px;max-width:560px}
+.wyc-sec-line{flex:1;height:1px;background:var(--wyc-line);min-width:40px;margin-bottom:9px}
+.wyc-eyebrow{
+  display:inline-block;font-size:12px;letter-spacing:.22em;color:var(--wyc-accent);
+  font-weight:600;margin-bottom:10px;
+}
+
+/* ---------- 首屏 ---------- */
+.wyc-hero{padding:52px 0 40px;background:
+  radial-gradient(900px 380px at 88% -10%,#f0e2d6 0%,transparent 65%),
+  linear-gradient(180deg,#faf7f2,#f6f3ee);}
+.wyc-hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:46px;align-items:center}
+.wyc-hero h1{
+  font-size:clamp(30px,4.4vw,50px);line-height:1.18;margin:0 0 14px;letter-spacing:-.01em;
+}
+.wyc-hero h1 span{color:var(--wyc-accent)}
+.wyc-hero-lead{font-size:15px;color:var(--wyc-soft);margin:0 0 20px;max-width:540px}
+.wyc-hero-desc{font-size:14.5px;color:#544840;margin:0 0 26px;max-width:560px}
+.wyc-hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:30px}
+.wyc-btn{
+  display:inline-flex;align-items:center;gap:8px;border-radius:999px;
+  padding:11px 24px;font-size:14.5px;border:1px solid transparent;transition:.2s;
+}
+.wyc-btn--primary{background:var(--wyc-accent);color:#fff;box-shadow:0 10px 22px rgba(177,68,47,.26)}
+.wyc-btn--primary:hover{background:#963825;transform:translateY(-1px)}
+.wyc-btn--ghost{background:#fff;border-color:var(--wyc-line);color:var(--wyc-ink)}
+.wyc-btn--ghost:hover{border-color:var(--wyc-accent);color:var(--wyc-accent)}
+.wyc-hero-stats{display:flex;gap:34px;flex-wrap:wrap}
+.wyc-hero-stats div b{display:block;font-size:24px;color:var(--wyc-accent);letter-spacing:.01em}
+.wyc-hero-stats div span{font-size:12.5px;color:var(--wyc-soft)}
+.wyc-hero-visual{position:relative}
+.wyc-hero-frame{
+  border-radius:22px;overflow:hidden;box-shadow:var(--wyc-shadow);
+  border:6px solid #fff;transform:rotate(-1.2deg);
+}
+.wyc-hero-badge{
+  position:absolute;right:-6px;bottom:22px;background:#fff;border-radius:14px;
+  padding:10px 16px;box-shadow:var(--wyc-shadow);font-size:12.5px;color:var(--wyc-soft);
+  border:1px solid var(--wyc-line);
+}
+.wyc-hero-badge b{display:block;color:var(--wyc-ink);font-size:15px}
+
+/* ---------- 品牌解析 ---------- */
+.wyc-about{background:#fffdfa;border-top:1px solid var(--wyc-line);border-bottom:1px solid var(--wyc-line)}
+.wyc-about-grid{display:grid;grid-template-columns:.62fr 1.38fr;gap:40px;align-items:start}
+.wyc-about-aside{
+  background:linear-gradient(160deg,#f3e8de,#f8f2ea);
+  border-radius:var(--wyc-radius);padding:26px;border:1px solid var(--wyc-line);
+}
+.wyc-about-aside h3{margin:0 0 10px;font-size:17px}
+.wyc-about-aside p{margin:0 0 16px;font-size:13.5px;color:var(--wyc-soft)}
+.wyc-tags{display:flex;flex-wrap:wrap;gap:8px}
+.wyc-tag{
+  font-size:12px;padding:4px 11px;border-radius:999px;background:#fff;
+  border:1px solid var(--wyc-line);color:var(--wyc-soft);
+}
+.wyc-about-body h2{font-size:clamp(21px,2.5vw,28px);margin:0 0 18px;line-height:1.4}
+.wyc-about-body h3{font-size:16.5px;margin:26px 0 10px;color:#3c312b}
+.wyc-about-body p{margin:0 0 14px;font-size:14.5px;color:#554a43;text-align:justify}
+.wyc-about-quote{
+  margin:24px 0;padding:18px 22px;border-left:3px solid var(--wyc-accent);
+  background:#faf5ef;border-radius:0 12px 12px 0;font-size:14.5px;color:#4a3d35;
+}
+
+/* ---------- 视频卡片通用 ---------- */
+.wyc-cover{position:relative;overflow:hidden;background:#e8e0d6}
+.wyc-cover img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.wyc-card:hover .wyc-cover img{transform:scale(1.045)}
+.wyc-cover--16x9{aspect-ratio:16/9}
+.wyc-cover::after{
+  content:"";position:absolute;inset:auto 0 0 0;height:46%;
+  background:linear-gradient(180deg,transparent,rgba(30,20,14,.55));pointer-events:none;
+}
+.wyc-play{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.86);
+  display:grid;place-items:center;color:var(--wyc-accent);font-size:16px;
+  box-shadow:0 6px 18px rgba(0,0,0,.22);z-index:2;transition:.25s;
+}
+.wyc-card:hover .wyc-play{background:var(--wyc-accent);color:#fff;transform:translate(-50%,-50%) scale(1.08)}
+.wyc-cover-label{
+  position:absolute;left:10px;bottom:10px;z-index:2;display:flex;gap:6px;flex-wrap:wrap;
+}
+.wyc-chip{
+  font-size:11.5px;padding:2px 9px;border-radius:6px;background:rgba(20,14,10,.62);
+  color:#fff;backdrop-filter:blur(4px);
+}
+.wyc-chip--time{position:absolute;right:10px;bottom:10px;z-index:2}
+
+.wyc-card{
+  background:var(--wyc-card);border:1px solid var(--wyc-line);border-radius:var(--wyc-radius);
+  overflow:hidden;transition:.28s;display:flex;flex-direction:column;
+}
+.wyc-card:hover{transform:translateY(-4px);box-shadow:var(--wyc-shadow);border-color:#d9c9b9}
+.wyc-card-body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.wyc-card-body h3{margin:0;font-size:15.5px;line-height:1.45}
+.wyc-card-body h3 a:hover{color:var(--wyc-accent)}
+.wyc-card-body p{margin:0;font-size:13px;color:var(--wyc-soft);flex:1}
+.wyc-card-meta{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--wyc-soft);flex-wrap:wrap}
+.wyc-avatar{
+  width:24px;height:24px;border-radius:50%;flex:none;display:grid;place-items:center;
+  font-size:11px;color:#fff;font-weight:600;
+}
+.wyc-card-tags{display:flex;gap:6px;flex-wrap:wrap}
+.wyc-card-tags span{font-size:11.5px;color:var(--wyc-teal);background:#eaf1ee;border-radius:5px;padding:1px 8px}
+.wyc-ops{display:flex;gap:14px;border-top:1px dashed var(--wyc-line);padding-top:10px;font-size:12.5px;color:var(--wyc-soft)}
+.wyc-op{background:none;border:0;padding:0;color:inherit;display:inline-flex;align-items:center;gap:5px;font-size:12.5px;transition:.18s}
+.wyc-op:hover{color:var(--wyc-accent)}
+.wyc-op.is-liked{color:var(--wyc-accent);font-weight:600}
+.wyc-op.is-saved{color:var(--wyc-gold);font-weight:600}
+
+/* ---------- 焦点内容 ---------- */
+.wyc-focus-grid{display:grid;grid-template-columns:1.16fr .84fr;gap:24px}
+.wyc-focus-main .wyc-card-body h3{font-size:20px}
+.wyc-focus-main .wyc-card-body p{font-size:13.5px}
+.wyc-focus-mini{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-content:start}
+.wyc-focus-mini .wyc-card-body h3{font-size:14px}
+
+/* ---------- 专题 ---------- */
+.wyc-topics{background:linear-gradient(180deg,#f6f3ee,#f1ebe2)}
+.wyc-topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.wyc-topic{
+  position:relative;border-radius:var(--wyc-radius);overflow:hidden;
+  min-height:250px;display:flex;align-items:flex-end;color:#fff;border:1px solid var(--wyc-line);
+}
+.wyc-topic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.wyc-topic:hover img{transform:scale(1.06)}
+.wyc-topic::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,14,10,.05),rgba(20,14,10,.82))}
+.wyc-topic-inner{position:relative;z-index:2;padding:20px 20px 22px}
+.wyc-topic-state{
+  display:inline-block;font-size:11.5px;padding:2px 9px;border-radius:6px;
+  background:rgba(244,201,165,.92);color:#3a2a20;font-weight:600;margin-bottom:9px;
+}
+.wyc-topic-inner h3{margin:0 0 7px;font-size:17.5px}
+.wyc-topic-inner p{margin:0;font-size:13px;color:#e6dcd2}
+
+/* ---------- 创作者 ---------- */
+.wyc-creators{background:#fffdfa;border-top:1px solid var(--wyc-line);border-bottom:1px solid var(--wyc-line)}
+.wyc-creator-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.wyc-creator{
+  background:var(--wyc-card);border:1px solid var(--wyc-line);border-radius:var(--wyc-radius);
+  padding:22px 18px;text-align:center;transition:.28s;
+}
+.wyc-creator:hover{transform:translateY(-4px);box-shadow:var(--wyc-shadow)}
+.wyc-creator-avatar{
+  width:64px;height:64px;border-radius:50%;margin:0 auto 12px;display:grid;place-items:center;
+  color:#fff;font-size:22px;font-weight:700;box-shadow:0 8px 18px rgba(58,40,30,.2);
+}
+.wyc-creator h3{margin:0 0 3px;font-size:15.5px}
+.wyc-creator .wyc-field{font-size:12.5px;color:var(--wyc-accent);margin-bottom:9px}
+.wyc-creator p{margin:0 0 12px;font-size:12.5px;color:var(--wyc-soft);min-height:56px}
+.wyc-creator-stats{display:flex;justify-content:center;gap:18px;font-size:12px;color:var(--wyc-soft);border-top:1px dashed var(--wyc-line);padding-top:10px}
+.wyc-creator-stats b{display:block;color:var(--wyc-ink);font-size:14px}
+
+/* ---------- 影像墙 ---------- */
+.wyc-wall{background:linear-gradient(180deg,#f6f3ee,#efe8de)}
+.wyc-wall-grid{
+  display:grid;grid-template-columns:repeat(6,1fr);gap:14px;
+}
+.wyc-wall-item{position:relative;border-radius:12px;overflow:hidden;border:1px solid var(--wyc-line);background:#e8e0d6}
+.wyc-wall-item img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.wyc-wall-item:hover img{transform:scale(1.07)}
+.wyc-wall-item::after{content:"";position:absolute;inset:auto 0 0 0;height:52%;background:linear-gradient(180deg,transparent,rgba(28,18,12,.6))}
+.wyc-wall-cap{position:absolute;left:10px;right:10px;bottom:9px;z-index:2;color:#fff;font-size:12px;line-height:1.4}
+.wyc-wall-cap b{display:block;font-size:13px;margin-bottom:1px}
+.wyc-wall-item--lg{grid-column:span 3;grid-row:span 2}
+.wyc-wall-item--md{grid-column:span 2}
+.wyc-wall-item--sm{grid-column:span 1}
+
+/* ---------- 随笔 ---------- */
+.wyc-notes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.wyc-note{
+  background:var(--wyc-card);border:1px solid var(--wyc-line);border-radius:var(--wyc-radius);
+  padding:24px 22px;position:relative;transition:.28s;
+}
+.wyc-note:hover{box-shadow:var(--wyc-shadow);transform:translateY(-3px)}
+.wyc-note-k{font-size:11.5px;letter-spacing:.18em;color:var(--wyc-accent);font-weight:600}
+.wyc-note h3{font-size:16px;margin:9px 0 10px}
+.wyc-note p{font-size:13.5px;color:var(--wyc-soft);margin:0 0 14px}
+.wyc-note-foot{font-size:12px;color:#9a8b7f;border-top:1px dashed var(--wyc-line);padding-top:12px}
+
+/* ---------- 评价 ---------- */
+.wyc-reviews{background:#fffdfa;border-top:1px solid var(--wyc-line);border-bottom:1px solid var(--wyc-line)}
+.wyc-review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.wyc-review{
+  background:#faf6f0;border:1px solid var(--wyc-line);border-radius:14px;padding:18px 18px 16px;
+}
+.wyc-review-top{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.wyc-review-top b{font-size:13.5px}
+.wyc-review-top span{font-size:11.5px;color:var(--wyc-soft)}
+.wyc-review p{margin:0;font-size:13px;color:#4e4239}
+.wyc-stars{color:var(--wyc-gold);font-size:12px;letter-spacing:2px;display:block;margin-bottom:6px}
+
+/* ---------- 动态 ---------- */
+.wyc-news-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.wyc-news{
+  display:flex;gap:16px;align-items:flex-start;background:var(--wyc-card);
+  border:1px solid var(--wyc-line);border-radius:14px;padding:18px;
+}
+.wyc-news-date{
+  flex:none;width:62px;text-align:center;border-right:1px dashed var(--wyc-line);
+  color:var(--wyc-accent);
+}
+.wyc-news-date b{display:block;font-size:20px;line-height:1.2}
+.wyc-news-date span{font-size:11px;color:var(--wyc-soft)}
+.wyc-news h3{margin:0 0 6px;font-size:14.5px}
+.wyc-news p{margin:0;font-size:12.5px;color:var(--wyc-soft)}
+
+/* ---------- 合作 ---------- */
+.wyc-partners{display:flex;flex-wrap:wrap;gap:12px}
+.wyc-partner{
+  flex:1 1 160px;background:#fff;border:1px solid var(--wyc-line);border-radius:12px;
+  padding:16px;text-align:center;transition:.25s;
+}
+.wyc-partner:hover{border-color:var(--wyc-accent);color:var(--wyc-accent)}
+.wyc-partner b{display:block;font-size:14px;margin-bottom:3px}
+.wyc-partner span{font-size:11.5px;color:var(--wyc-soft)}
+
+/* ---------- FAQ ---------- */
+.wyc-faq{background:linear-gradient(180deg,#f6f3ee,#f2ece3)}
+.wyc-faq-list{display:grid;gap:10px;max-width:900px}
+.wyc-faq-item{background:#fff;border:1px solid var(--wyc-line);border-radius:12px;overflow:hidden}
+.wyc-faq-item summary{
+  list-style:none;cursor:pointer;padding:15px 20px;font-size:14.5px;font-weight:600;
+  display:flex;justify-content:space-between;gap:14px;align-items:center;
+}
+.wyc-faq-item summary::-webkit-details-marker{display:none}
+.wyc-faq-item summary::after{content:"+";color:var(--wyc-accent);font-size:18px;line-height:1;flex:none}
+.wyc-faq-item[open] summary::after{content:"–"}
+.wyc-faq-item p{margin:0;padding:0 20px 16px;font-size:13.5px;color:var(--wyc-soft)}
+
+/* ---------- 联系 / 投稿 ---------- */
+.wyc-contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:26px}
+.wyc-contact-card{
+  background:linear-gradient(150deg,#2e2621,#4a3327);color:#f4ece3;border-radius:18px;
+  padding:30px;box-shadow:var(--wyc-shadow);
+}
+.wyc-contact-card h3{margin:0 0 12px;font-size:19px;color:#fff}
+.wyc-contact-card p{margin:0 0 16px;font-size:13.5px;color:#dccdc0}
+.wyc-contact-list{list-style:none;padding:0;margin:0 0 20px;display:grid;gap:8px;font-size:13.5px}
+.wyc-contact-list b{color:#f4c9a5;font-weight:600}
+.wyc-submit-box{background:var(--wyc-card);border:1px solid var(--wyc-line);border-radius:18px;padding:28px}
+.wyc-submit-box h3{margin:0 0 10px;font-size:18px}
+.wyc-submit-box p{font-size:13.5px;color:var(--wyc-soft);margin:0 0 16px}
+.wyc-submit-steps{list-style:none;padding:0;margin:0 0 20px;counter-reset:st;display:grid;gap:11px}
+.wyc-submit-steps li{position:relative;padding-left:32px;font-size:13.5px;color:#4e4239}
+.wyc-submit-steps li::before{
+  counter-increment:st;content:counter(st);position:absolute;left:0;top:1px;
+  width:20px;height:20px;border-radius:50%;background:var(--wyc-accent-soft);color:var(--wyc-accent);
+  font-size:11.5px;font-weight:700;display:grid;place-items:center;
+}
+
+/* ---------- 页脚 ---------- */
+.wyc-footer{background:#241d19;color:#cbbcb0;padding:54px 0 26px;font-size:13.5px}
+.wyc-footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;margin-bottom:34px}
+.wyc-footer h4{color:#f1e6dc;font-size:14.5px;margin:0 0 12px}
+.wyc-footer ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.wyc-footer a:hover{color:#f4c9a5}
+.wyc-footer-brand b{display:block;color:#fff;font-size:17px;margin-bottom:8px}
+.wyc-footer-brand p{margin:0 0 12px;color:#a8968a;font-size:12.5px}
+.wyc-footer-bottom{
+  border-top:1px solid #3b302a;padding-top:18px;display:flex;justify-content:space-between;
+  gap:14px;flex-wrap:wrap;font-size:12px;color:#93837a;
+}
+
+/* ---------- 交互弹层 ---------- */
+.wyc-modal{
+  position:fixed;inset:0;background:rgba(28,20,15,.62);display:none;place-items:center;
+  z-index:300;padding:20px;
+}
+.wyc-modal.is-on{display:grid}
+.wyc-modal-card{
+  background:#fffdfa;border-radius:18px;max-width:460px;width:100%;padding:26px;
+  box-shadow:0 24px 60px rgba(0,0,0,.3);max-height:86vh;overflow:auto;
+}
+.wyc-modal-card h3{margin:0 0 12px;font-size:18px;color:var(--wyc-ink)}
+.wyc-modal-card p{font-size:13.5px;color:var(--wyc-soft);margin:0 0 14px}
+.wyc-modal-close{
+  float:right;border:0;background:#f1e9df;border-radius:8px;width:30px;height:30px;
+  font-size:15px;color:var(--wyc-ink);
+}
+.wyc-modal-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+
+.wyc-toast{
+  position:fixed;left:50%;bottom:32px;transform:translate(-50%,20px);
+  background:#2e2621;color:#f6efe6;padding:11px 22px;border-radius:999px;font-size:13.5px;
+  opacity:0;pointer-events:none;transition:.3s;z-index:400;box-shadow:0 14px 30px rgba(0,0,0,.28);
+}
+.wyc-toast.is-on{opacity:1;transform:translate(-50%,0)}
+
+.wyc-top{
+  position:fixed;right:22px;bottom:26px;width:44px;height:44px;border-radius:50%;
+  background:var(--wyc-accent);color:#fff;border:0;font-size:16px;z-index:150;
+  box-shadow:0 10px 22px rgba(177,68,47,.35);display:none;place-items:center;
+}
+.wyc-top.is-on{display:grid}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:1040px){
+  .wyc-hero-grid{grid-template-columns:1fr;gap:32px}
+  .wyc-about-grid{grid-template-columns:1fr}
+  .wyc-focus-grid{grid-template-columns:1fr}
+  .wyc-creator-grid{grid-template-columns:repeat(2,1fr)}
+  .wyc-topic-grid{grid-template-columns:repeat(2,1fr)}
+  .wyc-notes-grid{grid-template-columns:1fr 1fr}
+  .wyc-review-grid{grid-template-columns:1fr 1fr}
+  .wyc-footer-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:820px){
+  html{scroll-padding-top:132px}
+  .wyc-header-inner{flex-wrap:wrap;gap:12px}
+  .wyc-nav{
+    display:none;width:100%;order:5;flex-direction:column;align-items:stretch;
+    background:#fff;border:1px solid var(--wyc-line);border-radius:12px;padding:8px;gap:2px;
+  }
+  .wyc-nav.is-open{display:flex}
+  .wyc-nav a{padding:10px 14px}
+  .wyc-burger{display:block;margin-left:auto}
+  .wyc-search{order:4;width:100%;margin-left:0}
+  .wyc-search input{width:100%;flex:1}
+  .wyc-search-hint{order:6;width:100%}
+  .wyc-wall-grid{grid-template-columns:repeat(4,1fr)}
+  .wyc-wall-item--lg{grid-column:span 4;grid-row:span 1}
+  .wyc-wall-item--md{grid-column:span 2}
+  .wyc-wall-item--sm{grid-column:span 2}
+  .wyc-contact-grid{grid-template-columns:1fr}
+  .wyc-news-grid{grid-template-columns:1fr}
+}
+@media (max-width:600px){
+  .wyc-section{padding:46px 0}
+  .wyc-focus-mini{grid-template-columns:1fr}
+  .wyc-creator-grid,.wyc-topic-grid,.wyc-notes-grid,.wyc-review-grid{grid-template-columns:1fr}
+  .wyc-footer-grid{grid-template-columns:1fr}
+  .wyc-hero-stats{gap:22px}
+  .wyc-hero-badge{display:none}
+  .wyc-ops{gap:10px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+<a class="wyc-skiplink" href="#wyc-main">跳转到主要内容</a>
+
+<div class="wyc-sticky">
+  <div class="wyc-notice" aria-label="站内公告">
+    <div class="wyc-notice-inner">
+      <span class="wyc-notice-tag">官方发布</span>
+      <ul class="wyc-notice-list">
+        <li><strong>11-18</strong> 冬季影像企划《炉边的人》开放投稿报名</li>
+        <li><strong>11-16</strong> 创作者扶持计划第三期上线，新增剪辑工具包</li>
+        <li><strong>11-12</strong> 品牌故事专题《一盏灯的十年》官方发布</li>
+      </ul>
+    </div>
+  </div>
+
+  <header class="wyc-header">
+    <div class="wyc-header-inner">
+      <a class="wyc-brand" href="#wyc-top" aria-label="王雨纯mm131 官方网站首页">
+        <span class="wyc-brand-mark">雨</span>
+        <span class="wyc-brand-text">
+          <b>王雨纯mm131</b>
+          <span>OFFICIAL VIDEO BRAND</span>
+        </span>
+      </a>
+      <button class="wyc-burger" id="wycBurger" aria-label="展开导航菜单" aria-expanded="false" aria-controls="wycNav">☰</button>
+      <nav class="wyc-nav" id="wycNav" aria-label="主导航">
+        <a href="#wyc-top" class="is-active">首页</a>
+        <a href="#wyc-focus">视频焦点</a>
+        <a href="#wyc-topics">专题企划</a>
+        <a href="#wyc-creators">创作者</a>
+        <a href="#wyc-news">企业动态</a>
+        <a href="#wyc-faq">帮助</a>
+        <a href="#wyc-contact">联系</a>
+      </nav>
+      <form class="wyc-search" id="wycSearchForm" role="search" aria-label="站内内容搜索">
+        <input type="search" id="wycSearchInput" placeholder="搜索视频、专题或创作者" aria-label="搜索关键词">
+        <button type="submit">搜索</button>
+      </form>
+      <p class="wyc-search-hint" id="wycSearchHint" role="status" aria-live="polite"></p>
+    </div>
+  </header>
+</div>
+
+<main id="wyc-main">
+  <span id="wyc-top"></span>
+
+  <!-- 首屏 -->
+  <section class="wyc-hero" aria-labelledby="wycHeroTitle">
+    <div class="wyc-wrap wyc-hero-grid">
+      <div>
+        <span class="wyc-eyebrow">品牌官网 · 原创影像社区</span>
+        <h1 id="wycHeroTitle">王雨纯mm131 <span>影像品牌官网</span></h1>
+        <p class="wyc-hero-lead">以真实生活为底片，用影像记录日常的温度。王雨纯mm131 是面向创作者与观众的品牌内容平台，深耕生活方式影像领域，持续输出原创、高清、有质感的精品内容。</p>
+        <p class="wyc-hero-desc">作为官方网站，我们把每一段素材当作一次诚实的表达：不追逐流量噪声，只关注镜头里的人、事与情绪。社区里既有专业创作者的幕后拆解，也有普通用户举起手机记录的一天。</p>
+        <div class="wyc-hero-actions">
+          <a class="wyc-btn wyc-btn--primary" href="#wyc-focus">浏览焦点内容 →</a>
+          <a class="wyc-btn wyc-btn--ghost" href="#wyc-creators">认识创作者</a>
+          <a class="wyc-btn wyc-btn--ghost" href="#wyc-contact">投稿报名</a>
+        </div>
+        <div class="wyc-hero-stats">
+          <div><b>1,860+</b><span>原创影像作品</span></div>
+          <div><b>42万</b><span>社区用户</span></div>
+          <div><b>96%</b><span>用户口碑好评</span></div>
+        </div>
+      </div>
+      <div class="wyc-hero-visual">
+        <div class="wyc-hero-frame">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 400'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f5d9c4'/%3E%3Cstop offset='1' stop-color='%23b1442f'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='400' fill='url(%23g1)'/%3E%3Ccircle cx='480' cy='120' r='72' fill='%23f6efe6' opacity='.85'/%3E%3Cpath d='M0 320 Q160 240 320 300 T640 280 L640 400 L0 400 Z' fill='%238a3524' opacity='.55'/%3E%3Cpath d='M0 350 Q200 300 400 340 T640 330 L640 400 L0 400 Z' fill='%232a2320' opacity='.7'/%3E%3Crect x='60' y='90' width='150' height='96' rx='10' fill='%23fffdfa' opacity='.9'/%3E%3Crect x='74' y='106' width='92' height='8' rx='4' fill='%23b1442f'/%3E%3Crect x='74' y='124' width='120' height='6' rx='3' fill='%23c9b8aa'/%3E%3Crect x='74' y='138' width='104' height='6' rx='3' fill='%23c9b8aa'/%3E%3Crect x='74' y='152' width='66' height='6' rx='3' fill='%23c9b8aa'/%3E%3C/svg%3E" alt="王雨纯mm131 品牌首屏主视觉：暖色落日下的影像记录场景">
+        </div>
+        <div class="wyc-hero-badge"><b>本周上新 18 部</b>原创短片 · 持续运营中</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 品牌深度解析 -->
+  <section class="wyc-about wyc-section" aria-labelledby="wycAboutTitle">
+    <div class="wyc-wrap">
+      <div class="wyc-sec-head">
+        <h2 id="wycAboutTitle">关于 <em>王雨纯mm131</em> 的品牌定位与内容解析</h2>
+        <div class="wyc-sec-line"></div>
+      </div>
+      <div class="wyc-about-grid">
+        <aside class="wyc-about-aside">
+          <h3>品牌关键词</h3>
+          <p>一个以人像与日常影像为起点的内容品牌，强调真实、温暖与持续生长。</p>
+          <div class="wyc-tags">
+            <span class="wyc-tag">原创影像</span>
+            <span class="wyc-tag">生活方式</span>
+            <span class="wyc-tag">创作者社区</span>
+            <span class="wyc-tag">品牌故事</span>
+            <span class="wyc-tag">正版内容</span>
+            <span class="wyc-tag">高清画质</span>
+            <span class="wyc-tag">行业观察</span>
+            <span class="wyc-tag">匠心制作</span>
+          </div>
+          <h3 style="margin-top:24px">内容准则</h3>
+          <p>真实优先、表达克制、拒绝摆拍式美化；尊重创作者署名与版权，坚持官方发布与正版授权。</p>
+        </aside>
+
+        <div class="wyc-about-body">
+          <h2>把日常拍成值得回看的东西</h2>
+          <p>王雨纯mm131 并不是一个追求宏大叙事的品牌。它起步于一个很小的念头：那些被匆忙掠过的生活片段——晾在窗边的衣服、凌晨两点的便利店、朋友进门时脱下的外套——是否值得被完整地记录下来。围绕这个念头，品牌逐步长成一个专注原创影像的内容生态，覆盖日常记录、人物访谈、经验分享、城市探索与创作幕后等多个方向。官方网站承担的不只是作品陈列，更是品牌理念、创作者档案与内容规范的集中呈现。</p>
+          <p>在内容结构上，我们坚持“三分原创、三分对话、三分留白”。原创指的是完全由平台与签约创作者共同完成的纪实短片与系列企划；对话指的是访谈、连线与共创，把镜头交给不同生活处境的人；留白则意味着不把每一分钟都填满信息，允许画面有呼吸，允许观众在影像结束后停一会儿。这种节奏在短视频时代显得慢，但正是品牌口碑的来源——许多用户第一次停留，是因为画面干净；第二次回来，是因为被当成一个具体的人对待。</p>
+
+          <h3>品牌简史：从一个栏目到一套内容体系</h3>
+          <p>早期王雨纯mm131 只有一个固定栏目，每周更新一条十分钟左右的日常纪录，由品牌主理人亲自拍摄与剪辑。设备简单，光线普通，却意外收获了一批稳定观众。第二阶段，平台开始邀请外部创作者参与，形成松散的投稿联盟，逐步建立起选题会、脚本初审、成片复盘的协作机制。第三阶段，也就是现在，品牌把经验沉淀成可复制的内容方法论：选题不止看热点，更看是否具备长期回看价值；拍摄不只追求画面，更关注被摄者是否感到安全；上线之后必有回访，收集观众与创作者的双向反馈。</p>
+
+          <h3>为什么是“影像品牌”而不是“内容账号”</h3>
+          <p>账号关注增长，品牌关注信任。王雨纯mm131 把自己定义为影像品牌，意味着它需要对每一帧画面负责：素材来源清晰、授权链条完整、剪辑不歪曲原意、发布不制造对立情绪。我们建立了内部的内容品质分级标准，从画质、声音、叙事完整度、版权合规四个维度评估作品，只有达到标准的作品才会进入焦点位。这套标准并不完美，但它让“精品内容”四个字有据可依，也让合作方与创作者清楚知道努力的方向。</p>
+          <p>同时，品牌持续投入社区建设。创作者不是流水线上的供给方，而是内容生态的共同作者：他们的选题会被采纳，他们的困惑会被讨论，他们的成长会被记录。平台每季度举办一次开放日，公布选题方向与扶持计划，也接受批评。我们相信，一个愿意被检验的品牌，才配得上“值得信赖”这样的评价。</p>
+
+          <div class="wyc-about-quote">“镜头不负责制造生活，它只负责不辜负生活。”——这是王雨纯mm131 内容团队写在选题手册扉页的一句话，也是我们判断一个选题是否值得开机的第一标准。</div>
+
+          <h3>内容生态与创作者关系</h3>
+          <p>平台的创作者体系分为三个层级：新芽、同行、主理。新芽是刚完成第一次投稿的创作者，会获得选题建议与基础剪辑指导；同行是持续稳定更新的创作者，可参与品牌联合企划；主理则深度参与内容方向制定，拥有独立栏目。层级不是荣誉勋章，而是责任刻度：层级越高，对版权规范与内容真实性的要求越严格。我们希望用清晰的路径告诉每一位举起相机的人，成长是可以被看见的，也是需要被认真对待的。</p>
+          <p>面向观众，平台提供标签化浏览、专题聚合与创作者关注三条主要路径。观众可以按“日常记录”“人物访谈”“城市探索”等标签筛选，也可以跟随某位创作者持续观看其系列作品。所有内容均标注作者与发布时间，评论区开放讨论但设有基本秩序：不人身攻击、不泄露隐私、不传播未经核实的信息。这些规则写在帮助中心，也写在每一次社区公告里。</p>
+
+          <h3>技术、画质与观看体验</h3>
+          <p>王雨纯mm131 对画质有近乎固执的要求。上传端提供分辨率与码率建议，播放端根据网络情况自适应清晰度，同时保留原始画质选项。声音同样重要：我们不建议在拍摄时使用过度压缩的收音方案，环境声往往比配乐更能保存现场。为了让创作者少走弯路，平台整理了《基础拍摄与剪辑手册》，涵盖构图、光线、收音、剪辑节奏与字幕规范，全部免费开放下载。</p>
+          <p>在数据层面，平台只向创作者展示有助于改进内容的信息：完播曲线、回看热点、观众来源标签，而不展示可能引发焦虑的实时排名。我们更愿意让创作者把注意力放回作品本身。这种克制也体现在推荐逻辑里——算法会考虑热度，但不会被热度完全支配，人工编辑仍保留一定比例的推荐位，用于扶持新人与冷门但扎实的选题。</p>
+
+          <h3>社会责任与长期主义</h3>
+          <p>作为持续运营的品牌，王雨纯mm131 关注影像背后的伦理问题：拍摄前是否取得被摄者同意，涉及未成年人的内容是否做了必要保护，涉及公共场所的画面是否尊重他人隐私。平台设有内容合规审查与举报通道，发现问题会先下架再沟通，必要时公开处理结果。我们不认为这些是额外负担，它们本来就是影像表达的一部分。</p>
+          <p>长期来看，品牌希望成为一个可以被反复访问的影像档案库：五年后、十年后，当人们想看看这个时代普通人的日常是什么样子，能在这里找到一些诚实、清晰、有温度的记录。这个目标不宏大，但足够支撑我们继续更新下去。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 焦点内容 -->
+  <section class="wyc-section" id="wyc-focus" aria-labelledby="wycFocusTitle">
+    <div class="wyc-wrap">
+      <div class="wyc-sec-head">
+        <h2 id="wycFocusTitle">视频<em>焦点</em> · 本周重点推荐</h2>
+        <div class="wyc-sec-line"></div>
+        <p>编辑团队从近期作品中挑出的六部影像，涵盖纪录、访谈与生活实验。</p>
+      </div>
+
+      <div class="wyc-focus-grid">
+        <article class="wyc-card wyc-focus-main">
+          <div class="wyc-cover wyc-cover--16x9">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%233f6f63'/%3E%3Cstop offset='1' stop-color='%231d3a34'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23f1)'/%3E%3Ccircle cx='150' cy='110' r='52' fill='%23f4c9a5' opacity='.9'/%3E%3Cpath d='M0 260 Q140 210 300 250 T640 235 L640 360 L0 360Z' fill='%230f2622' opacity='.8'/%3E%3Crect x='400' y='70' width='170' height='110' rx='8' fill='%23f6efe6' opacity='.2'/%3E%3Crect x='418' y='90' width='90' height='7' rx='3' fill='%23f6efe6' opacity='.8'/%3E%3Crect x='418' y='108' width='130' height='5' rx='2' fill='%23f6efe6' opacity='.5'/%3E%3Crect x='418' y='122' width='110' height='5' rx='2' fill='%23f6efe6' opacity='.5'/%3E%3C/svg%3E" alt="焦点视频封面：傍晚河边散步的纪录短片《一条走了七年的路》">
+            <span class="wyc-play" aria-hidden="true">▶</span>
+            <div class="wyc-cover-label"><span class="wyc-chip">焦点</span><span class="wyc-chip">日常记录</span></div>
+            <span class="wyc-chip wyc-chip--time">12:48</span>
+          </div>
+          <div class="wyc-card-body">
+            <h3><a href="#wyc-focus">一条走了七年的路：从出租屋到河边的十分钟</a></h3>
+            <p>创作者“林间慢递”用七年时间记录同一条通勤路线，镜头里从旧楼到新桥，从一个人到两个人。没有旁白，只有脚步声与风声，却把“持续”两个字讲得很清楚。</p>
+            <div class="wyc-card-tags"><span># 日常记录</span><span># 城市探索</span><span># 治愈影像</span></div>
+            <div class="wyc-card-meta">
+              <span class="wyc-avatar" style="background:#3f6f63">林</span>
+              <span>林间慢递</span><span>·</span><span>11-17 发布</span><span>·</span><span>8.6万 次播放</span>
+            </div>
+            <div class="wyc-ops">
+              <button class="wyc-op" data-action="like" data-count="1240" type="button" aria-pressed="false">♡ <span>1,240</span></button>
+              <button class="wyc-op" data-action="save" type="button" aria-pressed="false">☆ 收藏</button>
+              <button class="wyc-op" data-action="share" type="button">↗ 分享</button>
+            </div>
+          </div>
+        </article>
+
+        <div class="wyc-focus-mini">
+          <article class="wyc-card">
+            <div class="wyc-cover wyc-cover--16x9">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23f0d8c2'/%3E%3Ccircle cx='480' cy='120' r='86' fill='%23c08a3e' opacity='.55'/%3E%3Cpath d='M0 300 Q160 240 320 285 T640 270 L640 360 L0 360Z' fill='%238a5a2b' opacity='.5'/%3E%3Crect x='60' y='110' width='210' height='130' rx='12' fill='%23fffdfa' opacity='.85'/%3E%3Crect x='80' y='132' width='120' height='9' rx='4' fill='%23b1442f'/%3E%3Crect x='80' y='152' width='160' height='6' rx='3' fill='%23c9b8aa'/%3E%3Crect x='80' y='168' width='140' height='6' rx='3' fill='%23c9b8aa'/%3E%3Crect x='80' y='184' width='90' height='6' rx='3' fill='%23c9b8aa'/%3E%3C/svg%3E" alt="视频封面：午后厨房里的手作面包记录《面团醒着的两个小时》">
+              <span class="wyc-play" aria-hidden="true">▶</span>
+              <span class="wyc-chip wyc-chip--time">08:12</span>
+            </div>
+            <div class="wyc-card-body">
+              <h3><a href="#wyc-focus">面团醒着的两个小时</a></h3>
+              <p>厨房里的手作面包记录，从称粉到出炉，全程只保留环境声。</p>
+              <div class="wyc-card-meta"><span class="wyc-avatar" style="background:#c08a3e">苏</span><span>苏禾手记</span><span>·</span><span>3.2万</span></div>
+            </div>
+          </article>
+          <article class="wyc-card">
+            <div class="wyc-cover wyc-cover--16x9">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23dde7e3'/%3E%3Ccircle cx='180' cy='140' r='62' fill='%233f6f63' opacity='.7'/%3E%3Ccircle cx='420' cy='90' r='34' fill='%23f4c9a5'/%3E%3Cpath d='M0 280 Q180 230 340 270 T640 250 L640 360 L0 360Z' fill='%231d3a34' opacity='.55'/%3E%3Crect x='380' y='150' width='190' height='120' rx='10' fill='%23fffdfa' opacity='.8'/%3E%3Crect x='398' y='170' width='100' height='8' rx='4' fill='%233f6f63'/%3E%3Crect x='398' y='188' width='150' height='6' rx='3' fill='%23b8c8c2'/%3E%3Crect x='398' y='204' width='120' height='6' rx='3' fill='%23b8c8c2'/%3E%3C/svg%3E" alt="视频封面：访谈短片《剪辑师阿川：我删掉了自己最喜欢的三个镜头》">
+              <span class="wyc-play" aria-hidden="true">▶</span>
+              <span class="wyc-chip wyc-chip--time">15:36</span>
+            </div>
+            <div class="wyc-card-body">
+              <h3><a href="#wyc-focus">剪辑师阿川：我删掉了最喜欢的三个镜头</a></h3>
+              <p>一场关于取舍的访谈，聊创作幕后与自我怀疑。</p>
+              <div class="wyc-card-meta"><span class="wyc-avatar" style="background:#3f6f63">川</span><span>阿川访谈录</span><span>·</span><span>2.7万</span></div>
+            </div>
+          </article>
+          <article class="wyc-card">
+            <div class="wyc-cover wyc-cover--16x9">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%232d2a35'/%3E%3Ccircle cx='320' cy='170' r='110' fill='%23b1442f' opacity='.35'/%3E%3Ccircle cx='320' cy='170' r='64' fill='%23f4c9a5' opacity='.8'/%3E%3Cpath d='M250 170 h140 M320 100 v140' stroke='%23fffdfa' stroke-width='3' opacity='.4'/%3E%3Crect x='70' y='60' width='140' height='8' rx='4' fill='%23f6efe6' opacity='.7'/%3E%3Crect x='70' y='80' width='100' height='6' rx='3' fill='%23f6efe6' opacity='.4'/%3E%3C/svg%3E" alt="视频封面：深夜便利店里的城市观察短片《凌晨两点还在营业》">
+              <span class="wyc-play" aria-hidden="true">▶</span>
+              <span class="wyc-chip wyc-chip--time">10:04</span>
+            </div>
+            <div class="wyc-card-body">
+              <h3><a href="#wyc-focus">凌晨两点还在营业</a></h3>
+              <p>城市探索系列，镜头对准深夜便利店与夜归的人。</p>
+              <div class="wyc-card-meta"><span class="wyc-avatar" style="background:#b1442f">夜</span><span>夜行观察</span><span>·</span><span>4.1万</span></div>
+            </div>
+          </article>
+          <article class="wyc-card">
+            <div class="wyc-cover wyc-cover--16x9">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23efe4d6'/%3E%3Cpath d='M0 240 L640 140 L640 360 L0 360Z' fill='%23c08a3e' opacity='.35'/%3E%3Ccircle cx='520' cy='90' r='48' fill='%23b1442f' opacity='.6'/%3E%3Crect x='80' y='120' width='170' height='100' rx='10' fill='%23fffdfa' opacity='.9'/%3E%3Crect x='100' y='140' width='90' height='8' rx='4' fill='%23b1442f'/%3E%3Crect x='100' y='158' width='120' height='6' rx='3' fill='%23cbb7a5'/%3E%3Crect x='100' y='174' width='80' height='6' rx='3' fill='%23cbb7a5'/%3E%3C/svg%3E" alt="视频封面：手作陶器教程《第一次拉坯失败之后》">
+              <span class="wyc-play" aria-hidden="true">▶</span>
+              <span class="wyc-chip wyc-chip--time">09:21</span>
+            </div>
+            <div class="wyc-card-body">
+              <h3><a href="#wyc-focus">第一次拉坯失败之后</a></h3>
+              <p>手作教程，把失败过程完整保留，比成品更值得看。</p>
+              <div class="wyc-card-meta"><span class="wyc-avatar" style="background:#7a5a8c">陶</span><span>陶土与手</span><span>·</span><span>1.9万</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题 -->
+  <section class="wyc-section wyc-topics" id="wyc-topics" aria-labelledby="wycTopicsTitle">
+    <div class="wyc-wrap">
+      <div class="wyc-sec-head">
+        <h2 id="wycTopicsTitle">专题<em>企划</em> · 长期更新的内容栏目</h2>
+        <div class="wyc-sec-line"></div>
+        <p>每个专题都由编辑与创作者共同策划，更新状态实时标注。</p>
+      </div>
+      <div class="wyc-topic-grid">
+        <a class="wyc-topic" href="#wyc-topics">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 420'%3E%3Cdefs%3E%3ClinearGradient id='t1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23b1442f'/%3E%3Cstop offset='1' stop-color='%23351f18'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='600' height='420' fill='url(%23t1)'/%3E%3Ccircle cx='430' cy='120' r='66' fill='%23f4c9a5' opacity='.75'/%3E%3Cpath d='M0 300 Q150 250 300 290 T600 270 L600 420 L0 420Z' fill='%231d120e' opacity='.6'/%3E%3Crect x='60' y='80' width='190' height='10' rx='5' fill='%23f6efe6' opacity='.8'/%3E%3Crect x='60' y='102' width='130' height='7' rx='3' fill='%23f6efe6' opacity='.45'/%3E%3C/svg%3E" alt="专题封面：冬季影像企划《炉边的人》">
+          <div class="wyc-topic-inner">
+            <span class="wyc-topic-state">更新中 · 第 6 期</span>
+            <h3>冬季影像企划《炉边的人》</h3>
+            <p>记录冬天里围坐交谈的普通人，用长镜头保存说话的节奏。已上线六期，开放投稿。</p>
+          </div>
+        </a>
+        <a class="wyc-topic" href="#wyc-topics">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 420'%3E%3Cdefs%3E%3ClinearGradient id='t2' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%233f6f63'/%3E%3Cstop offset='1' stop-color='%23152420'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='600' height='420' fill='url(%23t2)'/%3E%3Cpath d='M0 260 Q120 200 260 250 T600 220 L600 420 L0 420Z' fill='%230c1714' opacity='.7'/%3E%3Ccircle cx='150' cy='130' r='58' fill='%23f4c9a5' opacity='.7'/%3E%3Crect x='330' y='90' width='200' height='120' rx='10' fill='%23fffdfa' opacity='.18'/%3E%3Crect x='350' y='112' width='110' height='8' rx='4' fill='%23f6efe6' opacity='.8'/%3E%3Crect x='350' y='132' width='150' height='6' rx='3' fill='%23f6efe6' opacity='.5'/%3E%3Crect x='350' y='148' width='120' height='6' rx='3' fill='%23f6efe6' opacity='.5'/%3E%3C/svg%3E" alt="专题封面：城市慢行计划《把一条街走二十遍》">
+          <div class="wyc-topic-inner">
+            <span class="wyc-topic-state">筹备中 · 第 2 期</span>
+            <h3>城市慢行计划《把一条街走二十遍》</h3>
+            <p>同一条街道的二十次行走，观察时间如何在路面留下痕迹。投稿通道已开启。</p>
+          </div>
+        </a>
+        <a class="wyc-topic" href="#wyc-topics">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 420'%3E%3Cdefs%3E%3ClinearGradient id='t3' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%234b3d55'/%3E%3Cstop offset='1' stop-color='%23c08a3e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='600' height='420' fill='url(%23t3)'/%3E%3Ccircle cx='470' cy='300' r='96' fill='%23f6efe6' opacity='.22'/%3E%3Ccircle cx='160' cy='110' r='46' fill='%23f4c9a5' opacity='.85'/%3E%3Crect x='60' y='180' width='220' height='130' rx='12' fill='%23fffdfa' opacity='.85'/%3E%3Crect x='82' y='204' width='120' height='9' rx='4' fill='%234b3d55'/%3E%3Crect x='82' y='224' width='170' height='6' rx='3' fill='%23bda9c4'/%3E%3Crect x='82' y='240' width='140' height='6' rx='3' fill='%23bda9c4'/%3E%3Crect x='82' y='256' width='96' height='6' rx='3' fill='%23bda9c4'/%3E%3C/svg%3E" alt="专题封面：创作者访谈录《镜头后面的那张桌子》">
+          <div class="wyc-topic-inner">
+            <span class="wyc-topic-state">已完结 · 共 12 期</span>
+            <h3>创作者访谈录《镜头后面的那张桌子》</h3>
+            <p>走进十二位创作者的工作台，聊习惯、拖延与那些被删掉的素材。</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者矩阵 -->
+  <section class="wyc-section wyc-creators" id="wyc-creators" aria-labelledby="wycCreatorsTitle">
+    <div class="wyc-wrap">
+      <div class="wyc-sec-head">
+        <h2 id="wycCreatorsTitle">创作者<em>矩阵</em> · 与他们长期合作的人</h2>
+        <div class="wyc-sec-line"></div>
+        <p>平台签约与长期合作的创作者，覆盖纪录、访谈、手作、城市探索等领域。</p>
+      </div>
+      <div class="wyc-creator-grid">
+        <article class="wyc-creator">
+          <div class="wyc-creator-avatar" style="background:linear-gradient(140deg,#3f6f63,#1d3a34)">林</div>
+          <h3>林间慢递</h3>
+          <div class="wyc-field">日常记录 · 城市影像</div>
+          <p>习惯用固定机位拍同一条路，认为重复里藏着变化。作品节奏慢，但回看率高。</p>
+          <div class="wyc-creator-stats">
+            <div><b>86</b>作品</div><div><b>12.4万</b>关注</div>
+          </div>
+          <button class="wyc-op" data-action="author" data-name="林间慢递" data-field="日常记录 · 城市影像" data-intro="习惯用固定机位拍同一条路，认为重复里藏着变化。王雨纯mm131 平台签约创作者，持续更新城市慢行系列。" type="button" style="margin-top:12px;color:var(--wyc-accent)">查看档案 →</button>
+        </article>
+        <article class="wyc-creator">
+          <div class="wyc-creator-avatar" style="background:linear-gradient(140deg,#c08a3e,#8a5a2b)">苏</div>
+          <h3>苏禾手记</h3>
+          <div class="wyc-field">美食烹饪 · 手作</div>
+          <p>厨房纪录片作者，坚持一镜到底的烹饪过程，把失败也留在成片里。</p>
+          <div class="wyc-creator-stats">
+            <div><b>54</b>作品</div><div><b>8.7万</b>关注</div>
+          </div>
+          <button class="wyc-op" data-action="author" data-name="苏禾手记" data-field="美食烹饪 · 手作" data-intro="厨房纪录片作者，坚持一镜到底的烹饪过程，把失败也留在成片里。相信食物是最日常的叙事载体。" type="button" style="margin-top:12px;color:var(--wyc-accent)">查看档案 →</button>
+        </article>
+        <article class="wyc-creator">
+          <div class="wyc-creator-avatar" style="background:linear-gradient(140deg,#b1442f,#6b2a1c)">川</div>
+          <h3>阿川访谈录</h3>
+          <div class="wyc-field">人物访谈 · 创作幕后</div>
+          <p>前剪辑师，现专注访谈。问题不多，但每个都留足沉默的空间。</p>
+          <div class="wyc-creator-stats">
+            <div><b>41</b>作品</div><div><b>6.2万</b>关注</div>
+          </div>
+          <button class="wyc-op" data-action="author" data-name="阿川访谈录" data-field="人物访谈 · 创作幕后" data-intro="前剪辑师，现专注访谈。问题不多，但每个都留足沉默的空间，擅长让被访者自己说出答案。" type="button" style="margin-top:12px;color:var(--wyc-accent)">查看档案 →</button>
+        </article>
+        <article class="wyc-creator">
+          <div class="wyc-creator-avatar" style="background:linear-gradient(140deg,#7a5a8c,#4b3d55)">陶</div>
+          <h3>陶土与手</h3>
+          <div class="wyc-field">手作DIY · 经验分享</div>
+          <p>陶艺工作室主理人，把教学过程拍成短纪录，强调手感胜过技巧。</p>
+          <div class="wyc-creator-stats">
+            <div><b>38</b>作品</div><div><b>4.9万</b>关注</div>
+          </div>
+          <button class="wyc-op" data-action="author" data-name="陶土与手" data-field="手作DIY · 经验分享" data-intro="陶艺工作室主理人，把教学过程拍成短纪录，强调手感胜过技巧，也乐于展示失败的坯体。" type="button" style="margin-top:12px;color:var(--wyc-accent)">查看档案 →</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 影像墙 -->
+  <section class="wyc-section wyc-wall" aria-labelledby="wycWallTitle">
+    <div class="wyc-wrap">
+      <div class="wyc-sec-head">
+        <h2 id="wycWallTitle">社区<em>影像墙</em> · 来自用户的作品</h2>
+        <div class="wyc-sec-line"></div>
+        <p>每周从投稿中选出的画面，尺寸不一，记录的都是具体的生活。</p>
+      </div>
+      <div class="wyc-wall-grid">
+        <figure class="wyc-wall-item wyc-wall-item--lg" style="margin:0">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 520'%3E%3Cdefs%3E%3ClinearGradient id='w1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f0d8c2'/%3E%3Cstop offset='1' stop-color='%23c08a3e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='600' height='520' fill='url(%23w1)'/%3E%3Ccircle cx='420' cy='150' r='90' fill='%23f6efe6' opacity='.7'/%3E%3Cpath d='M0 360 Q160 300 320 350 T600 330 L600 520 L0 520Z' fill='%238a5a2b' opacity='.55'/%3E%3Crect x='70' y='110' width='200' height='130' rx='12' fill='%23fffdfa' opacity='.85'/%3E%3Crect x='92' y='134' width='120' height='9' rx='4' fill='%23b1442f'/%3E%3Crect x='92' y='154' width='156' height='6' rx='3' fill='%23cbb7a5'/%3E%3Crect x='92' y='170' width='130' height='6' rx='3' fill='%23cbb7a5'/%3E%3Crect x='92' y='186' width='96' height='6' rx='3' fill='%23cbb7a5'/%3E%3C/svg%3E" alt="社区影像作品：黄昏窗边的书桌与一杯凉掉的茶">
+          <figcaption class="wyc-wall-cap"><b>窗边的下午</b>作者：小满 · 日常记录</figcaption>
+        </figure>
+        <figure class="wyc-wall-item wyc-wall-item--md" style="margin:0">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23dde7e3'/%3E%3Ccircle cx='120' cy='100' r='54' fill='%233f6f63' opacity='.65'/%3E%3Cpath d='M0 220 Q100 180 200 210 T400 195 L400 300 L0 300Z' fill='%231d3a34' opacity='.55'/%3E%3Crect x='220' y='70' width='140' height='90' rx='8' fill='%23fffdfa' opacity='.8'/%3E%3Crect x='236' y='88' width='80' height='7' rx='3' fill='%233f6f63'/%3E%3Crect x='236' y='104' width='106' height='5' rx='2' fill='%23b8c8c2'/%3E%3C/svg%3E" alt="社区影像作品：清晨阳台上的绿植与旧木椅">
+          <figcaption class="wyc-wall-cap"><b>阳台的清晨</b>作者：阿树 · 治愈影像</figcaption>
+        </figure>
+        <figure class="wyc-wall-item wyc-wall-item--sm" style="margin:0">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 300'%3E%3Crect width='200' height='300' fill='%232d2a35'/%3E%3Ccircle cx='100' cy='110' r='54' fill='%23b1442f' opacity='.6'/%3E%3Crect x='30' y='200' width='140' height='8' rx='4' fill='%23f6efe6' opacity='.7'/%3E%3Crect x='30' y='218' width='100' height='6' rx='3' fill='%23f6efe6' opacity='.4'/%3E%3C/svg%3E" alt="社区影像作品：深夜路灯下的自行车">
+          <figcaption class="wyc-wall-cap"><b>回家路上</b>作者：夜行观察</figcaption>
+        </figure>
+        <figure class="wyc-wall-item wyc-wall-item--sm" style="margin:0">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 300'%3E%3Crect width='200' height='300' fill='%23efe4d6'/%3E%3Ccircle cx='100' cy='120' r='48' fill='%23c08a3e' opacity='.7'/%3E%3Cpath d='M0 220 L200 180 L200 300 L0 300Z' fill='%238a5a2b' opacity='.4'/%3E%3C/svg%3E" alt="社区影像作品：手作陶器出炉瞬间">
+          <figcaption class="wyc-wall-cap"><b>出炉</b>作者：陶土与手</figcaption>
+        </figure>
+        <figure class="wyc-wall-item wyc-wall-item--md" style="margin:0">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f0d8c2'/%3E%3Cpath d='M0 200 Q120 150 240 190 T400 170 L400 300 L0 300Z' fill='%23b1442f' opacity='.4'/%3E%3Ccircle cx='300' cy='90' r='40' fill='%23fffdfa' opacity='.8'/%3E%3Crect x='50' y='80' width='120' height='80' rx='8' fill='%23fffdfa' opacity='.7'/%3E%3C/svg%3E" alt="社区影像作品：菜市场门口的红色雨棚">
+          <figcaption class="wyc-wall-cap"><b>雨棚下</b>作者：林间慢递 · 城市探索</figcaption>
+        </figure>
+        <figure class="wyc-wall-item wyc-wall-item--sm" style="margin:0">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 300'%3E%3Crect width='200' height='300' fill='%234b3d55'/%3E%3Ccircle cx='90' cy='130' r='50' fill='%23f4c9a5' opacity='.75'/%3E%3Crect x='30' y='220' width='140' height='7' rx='3' fill='%23f6efe6' opacity='.6'/%3E%3C/svg%3E" alt="社区影像作品：访谈现场的收音麦克风">
+          <figcaption class="wyc-wall-cap"><b>录制中</b>作者：阿川访谈录</figcaption>
+        </figure>
+        <figure class="wyc-wall-item wyc-wall-item--sm" style="margin:0">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 300'%3E%3Crect width='200' height='300' fill='%23dbe5df'/%3E%3Ccircle cx='120' cy='100' r='44' fill='%233f6f63' opacity='.6'/%3E%3Cpath d='M0 230 L200 190 L200 300 L0 300Z' fill='%231d3a34' opacity='.45'/%3E%3C/svg%3E" alt="社区影像作品：雨后的玻璃窗与模糊的街景">
+          <figcaption class="wyc-wall-cap"><b>雨后</b>作者：小满</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 随笔 -->
+  <section class="wyc-section" aria-labelledby="wycNotesTitle">
+    <div class="wyc-wrap">
+      <div class="wyc-sec-head">
+        <h2 id="wycNotesTitle">影像<em>随笔</em> · 写在成片之后</h2>
+        <div class="wyc-sec-line"></div>
+        <p>创作者与编辑的手记，和视频内容互为注脚。</p>
+      </div>
+      <div class="wyc-notes-grid">
+        <article class="wyc-note">
+          <span class="wyc-note-k">创作幕后</span>
+          <h3>拍一条没有台词的片子有多难</h3>
+          <p>最难的不是拍摄，是相信画面可以说清楚。剪到第三版的时候，我还是忍不住想加旁白，最后把它删了。观众的沉默比我的解释更有力量。</p>
+          <div class="wyc-note-foot">林间慢递 · 11-17</div>
+        </article>
+        <article class="wyc-note">
+          <span class="wyc-note-k">经验分享</span>
+          <h3>关于收音，我踩过的五个坑</h3>
+          <p>从领夹麦到指向性麦克风，从室内混响到户外风噪，写下来给刚起步的朋友。设备不是越贵越好，位置和距离才是关键。</p>
+          <div class="wyc-note-foot">苏禾手记 · 11-15</div>
+        </article>
+        <article class="wyc-note">
+          <span class="wyc-note-k">人物访谈</span>
+          <h3>他说，采访不是提问，是陪伴</h3>
+          <p>这一期嘉宾是一位做了二十年纪录片的老师。整场访谈我几乎没怎么说话，但素材已经足够。有时候镜头需要的是耐心。</p>
+          <div class="wyc-note-foot">阿川访谈录 · 11-13</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 评价 -->
+  <section class="wyc-section wyc-reviews" aria-labelledby="wycReviewsTitle">
+    <div class="wyc-wrap">
+      <div class="wyc-sec-head">
+        <h2 id="wycReviewsTitle">用户<em>评价</em> · 来自社区的声音</h2>
+        <div class="wyc-sec-line"></div>
+        <p>有鼓励，也有批评，我们一并保留。</p>
+      </div>
+      <div class="wyc-review-grid">
+        <article class="wyc-review">
+          <div class="wyc-review-top"><span class="wyc-avatar" style="background:#3f6f63">周</span><div><b>周末不加班</b><span>社区用户 · 2 年</span></div></div>
+          <span class="wyc-stars">★★★★★</span>
+          <p>很少见到一个影像品牌愿意把镜头停在一个人身上那么久。看完《一条走了七年的路》，我把自己的通勤路也拍了一遍，虽然拍得很糟，但心里挺踏实的。</p>
+        </article>
+        <article class="wyc-review">
+          <div class="wyc-review-top"><span class="wyc-avatar" style="background:#c08a3e">陈</span><div><b>陈小满</b><span>投稿作者 · 1 年</span></div></div>
+          <span class="wyc-stars">★★★★☆</span>
+          <p>投稿流程清楚，反馈也具体，不是一句“不符合要求”。唯一希望剪辑手册能再细化一下调色部分。整体来说，是很值得信赖的官方平台。</p>
+        </article>
+        <article class="wyc-review">
+          <div class="wyc-review-top"><span class="wyc-avatar" style="background:#b1442f">老</span><div><b>老周看片</b><span>社区用户 · 3 年</span></div></div>
+          <span class="wyc-stars">★★★★★</span>
+          <p>画质是真的稳，声音也不糊弄。有些平台的片子看着热闹，关了就没印象；这里的作品看完会想再放一遍，这就够了。</p>
+        </article>
+        <article class="wyc-review">
+          <div class="wyc-review-top"><span class="wyc-avatar" style="background:#7a5a8c">阿</span><div><b>阿树</b><span>投稿作者 · 8 个月</span></div></div>
+          <span class="wyc-stars">★★★★☆</span>
+          <p>作为新人，第一次被推荐的时候很意外。平台没有催我追热点，反而建议我把系列做完整，这种耐心在现在挺难得的。</p>
+        </article>
+        <article class="wyc-review">
+          <div class="wyc-review-top"><span class="wyc-avatar" style="background:#3f6f63">M</span><div><b>Momo在路上</b><span>社区用户 · 1 年半</span></div></div>
+          <span class="wyc-stars">★★★★★</span>
+          <p>专题企划的选题很有心，不是那种一眼能猜到结尾的内容。城市慢行那期我看了三遍，还拉着朋友去走了同一条街。</p>
+        </article>
+        <article class="wyc-review">
+          <div class="wyc-review-top"><span class="wyc-avatar" style="background:#c08a3e">柯</span><div><b>柯基不睡觉</b><span>社区用户 · 半年</span></div></div>
+          <span class="wyc-stars">★★★☆☆</span>
+          <p>内容质量没得说，就是更新频率对追更党不太友好，一周两三部实在不够看。希望之后能多一些幕后花絮类的小短片。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 企业动态 + 合作 + FAQ -->
+  <section class="wyc-section" id="wyc-news" aria-labelledby="wycNewsTitle">
+    <div class="wyc-wrap">
+      <div class="wyc-sec-head">
+        <h2 id="wycNewsTitle">企业<em>动态</em> · 官方发布与更新日志</h2>
+        <div class="wyc-sec-line"></div>
+        <p>关于品牌、内容与合作的最新信息。</p>
+      </div>
+      <div class="wyc-news-grid">
+        <article class="wyc-news">
+          <div class="wyc-news-date"><b>11.18</b><span>2026</span></div>
+          <div>
+            <h3>冬季企划《炉边的人》第五期上线，同步开放投稿报名</h3>
+            <p>本期走进三位夜间工作者的生活，报名通道持续开放至 12 月 10 日。</p>
+          </div>
+        </article>
+        <article class="wyc-news">
+          <div class="wyc-news-date"><b>11.16</b><span>2026</span></div>
+          <div>
+            <h3>创作者扶持计划第三期发布，新增剪辑工具包与选题库</h3>
+            <p>面向新芽创作者，提供素材模板、字幕规范与选题建议，免费下载使用。</p>
+          </div>
+        </article>
+        <article class="wyc-news">
+          <div class="wyc-news-date"><b>11.12</b><span>2026</span></div>
+          <div>
+            <h3>品牌故事专题《一盏灯的十年》官方发布</h3>
+            <p>以一件旧物为线索，梳理品牌从个人记录到内容生态的十年路径。</p>
+          </div>
+        </article>
+        <article class="wyc-news">
+          <div class="wyc-news-date"><b>11.05</b><span>2026</span></div>
+          <div>
+            <h3>社区内容规范更新，新增未成年人出镜保护条款</h3>
+            <p>涉及未成年人的投稿需提供监护人知情同意，平台将加强审核与回访。</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="wyc-sec-head" style="margin-top:52px">
+        <h2>合作<em>伙伴</em> · 一起把内容做好的人</h2>
+        <div class="wyc-sec-line"></div>
+      </div>
+      <div class="wyc-partners">
+        <div class="wyc-partner"><b>拾光影像工作室</b><span>联合制片 · 3 年</span></div>
+        <div class="wyc-partner"><b>慢行书店</b><span>线下放映合作</span></div>
+        <div class="wyc-partner"><b>青禾器材</b><span>设备支持伙伴</span></div>
+        <div class="wyc-partner"><b>城南独立影院</b><span>专题放映场地</span></div>
+        <div class="wyc-partner"><b>陶土实验室</b><span>手作内容共创</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="wyc-section wyc-faq" id="wyc-faq" aria-labelledby="wycFaqTitle">
+    <div class="wyc-wrap">
+      <div class="wyc-sec-head">
+        <h2 id="wycFaqTitle">帮助<em>中心</em> · 常见问题</h2>
+        <div class="wyc-sec-line"></div>
+        <p>关于投稿、版权与社区规则，先看这里。</p>
+      </div>
+      <div class="wyc-faq-list">
+        <details class="wyc-faq-item">
+          <summary>如何向王雨纯mm131 投稿自己的作品？</summary>
+          <p>进入联系页面提交作品链接与基本信息，团队会在五个工作日内回复。首次投稿建议选择时长十分钟以内、主题清晰的单条作品，并附上拍摄与剪辑说明。</p>
+        </details>
+        <details class="wyc-faq-item">
+          <summary>平台对画质和格式有什么要求？</summary>
+          <p>建议分辨率不低于 1080p，帧率 24 或 30 帧，音频采样率 48kHz。上传前请避免二次压缩，保留原始文件有利于成片质量与后续修改。</p>
+        </details>
+        <details class="wyc-faq-item">
+          <summary>投稿作品的版权归谁所有？</summary>
+          <p>版权始终归创作者所有。平台仅在获得授权后对作品进行展示与专题推荐，授权范围与期限会在合作协议中明确列出，不做超出约定的使用。</p>
+        </details>
+        <details class="wyc-faq-item">
+          <summary>专题企划的报名方式是什么？</summary>
+          <p>每期专题发布时会在公告条与动态区同步报名入口，按要求提交选题说明与样片即可。入选结果会以站内通知形式告知，并为入选者提供拍摄支持。</p>
+        </details>
+        <details class="wyc-faq-item">
+          <summary>在社区评论需要遵守哪些规则？</summary>
+          <p>请尊重他人隐私与人格，不发布攻击性言论，不传播未经核实的信息。涉及侵权或不当内容的评论可通过举报入口提交，平台核实后会及时处理。</p>
+        </details>
+        <details class="wyc-faq-item">
+          <summary>能否申请转载平台上的原创内容？</summary>
+          <p>可以，但需提前获得创作者与平台的书面许可，并注明来源与作者署名。未经授权的搬运、二次剪辑或商业使用均视为侵权，平台保留追责权利。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系与投稿 -->
+  <section class="wyc-section wyc-section--tight" id="wyc-contact" aria-labelledby="wycContactTitle">
+    <div class="wyc-wrap">
+      <div class="wyc-sec-head">
+        <h2 id="wycContactTitle">联系<em>我们</em> · 投稿、合作与反馈</h2>
+        <div class="wyc-sec-line"></div>
+        <p>无论是投稿、合作还是批评建议，都欢迎直接找到我们。</p>
+      </div>
+      <div class="wyc-contact-grid">
+        <div class="wyc-contact-card">
+          <h3>品牌内容中心</h3>
+          <p>王雨纯mm131 官方网站由品牌内容团队独立运营，所有内容均经人工审校后发布。</p>
+          <ul class="wyc-contact-list">
+            <li><b>投稿与选题</b>：submit@wycmm131.studio</li>
+            <li><b>品牌合作</b>：partner@wycmm131.studio</li>
+            <li><b>版权与举报</b>：rights@wycmm131.studio</li>
+            <li><b>工作时间</b>：周一至周五 10:00 – 19:00</li>
+            <li><b>线下空间</b>：城南影像工坊（需预约）</li>
+          </ul>
+          <div class="wyc-modal-actions">
+            <button class="wyc-btn wyc-btn--primary" id="wycCopyMail" type="button">复制投稿邮箱</button>
+            <button class="wyc-btn wyc-btn--ghost" id="wycFeedbackBtn" type="button" style="background:transparent;color:#f4ece3;border-color:#6b5a4d">意见反馈</button>
+          </div>
+        </div>
+        <div class="wyc-submit-box">
+          <h3>投稿指南</h3>
+          <p>我们更看重完整表达，而不是爆款潜质。以下三步帮助你顺利提交。</p>
+          <ol class="wyc-submit-steps">
+            <li>确定一个具体选题：一条街、一个人、一件事都可以。</li>
+            <li>准备一份简要说明：想拍什么、怎么拍、为什么值得拍。</li>
+            <li>通过投稿邮箱发送作品链接与联系方式，等待团队回复。</li>
+          </ol>
+          <button class="wyc-btn wyc-btn--primary" id="wycSubmitBtn" type="button">打开投稿说明</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="wyc-footer">
+  <div class="wyc-wrap">
+    <div class="wyc-footer-grid">
+      <div class="wyc-footer-brand">
+        <b>王雨纯mm131</b>
+        <p>专注原创影像与生活方式内容的视频品牌。官方网站持续运营中，坚持正版、高清与真实表达，为创作者提供可长期生长的内容生态。</p>
+        <p>品牌口号：把日常拍成值得回看的东西。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#wyc-focus">视频焦点</a></li>
+          <li><a href="#wyc-topics">专题企划</a></li>
+          <li><a href="#wyc-creators">创作者矩阵</a></li>
+          <li><a href="#wyc-news">企业动态</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于品牌</h4>
+        <ul>
+          <li><a href="#wyc-main">品牌故事</a></li>
+          <li><a href="#wyc-faq">帮助中心</a></li>
+          <li><a href="#wyc-contact">投稿报名</a></li>
+          <li><a href="#wyc-contact">合作联系</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>社区规则</h4>
+        <ul>
+          <li><a href="#wyc-faq">内容规范</a></li>
+          <li><a href="#wyc-faq">版权说明</a></li>
+          <li><a href="#wyc-faq">未成年人保护</a></li>
+          <li><a href="#wyc-contact">举报通道</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wyc-footer-bottom">
+      <span>© 2026 王雨纯mm131 官方网站 · 版权所有 · 持续运营中</span>
+      <span>原创内容 · 正版授权 · 高清呈现 · 企业级内容服务</span>
+    </div>
+  </div>
+</footer>
+
+<button class="wyc-top" id="wycTopBtn" aria-label="回到页面顶部" type="button">↑</button>
+
+<div class="wyc-modal" id="wycModal" role="dialog" aria-modal="true" aria-labelledby="wycModalTitle">
+  <div class="wyc-modal-card">
+    <button class="wyc-modal-close" id="wycModalClose" type="button" aria-label="关闭弹窗">✕</button>
+    <h3 id="wycModalTitle">提示</h3>
+    <div id="wycModalBody"></div>
+    <div class="wyc-modal-actions" id="wycModalActions"></div>
+  </div>
+</div>
+
+<div class="wyc-toast" id="wycToast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  var ns = {
+    burger: document.getElementById('wycBurger'),
+    nav: document.getElementById('wycNav'),
+    heroTitle: document.getElementById('wycHeroTitle'),
+    searchForm: document.getElementById('wycSearchForm'),
+    searchInput: document.getElementById('wycSearchInput'),
+    searchHint: document.getElementById('wycSearchHint'),
+    topBtn: document.getElementById('wycTopBtn'),
+    modal: document.getElementById('wycModal'),
+    modalTitle: document.getElementById('wycModalTitle'),
+    modalBody: document.getElementById('wycModalBody'),
+    modalActions: document.getElementById('wycModalActions'),
+    modalClose: document.getElementById('wycModalClose'),
+    toast: document.getElementById('wycToast')
+  };
+
+  var toastTimer = null;
+  function toast(msg){
+    ns.toast.textContent = msg;
+    ns.toast.classList.add('is-on');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ ns.toast.classList.remove('is-on'); }, 2200);
+  }
+
+  /* 移动端导航 */
+  if(ns.burger){
+    ns.burger.addEventListener('click', function(){
+      var open = ns.nav.classList.toggle('is-open');
+      ns.burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    ns.nav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A' && window.innerWidth <= 820){
+        ns.nav.classList.remove('is-open');
+        ns.burger.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  /* 搜索前端反馈 */
+  var searchPool = [
+    '日常记录','人物访谈','城市探索','手作DIY','美食烹饪','创作幕后','治愈影像','品牌故事',
+    '林间慢递','苏禾手记','阿川访谈录','陶土与手','冬季影像企划','城市慢行计划'
+  ];
+  if(ns.searchForm){
+    ns.searchForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      var q = ns.searchInput.value.trim();
+      if(!q){
+        ns.searchHint.textContent = '请输入关键词，例如“日常记录”或创作者昵称。';
+        ns.searchHint.classList.add('is-on');
+        return;
+      }
+      var hit = searchPool.filter(function(item){ return item.indexOf(q) !== -1 || q.indexOf(item) !== -1; });
+      if(hit.length){
+        ns.searchHint.textContent = '找到 ' + hit.length + ' 个相关内容：' + hit.join('、') + '。已为你定位到相关内容区。';
+        ns.searchHint.classList.add('is-on');
+        var target = document.getElementById('wyc-focus');
+        if(target){ target.scrollIntoView({behavior:'smooth', block:'start'}); }
+      }else{
+        ns.searchHint.textContent = '暂未匹配到“' + q + '”，可尝试“访谈”“手作”“城市”等关键词。';
+        ns.searchHint.classList.add('is-on');
+      }
+    });
+  }
+
+  /* 弹窗 */
+  function openModal(title, html, actions){
+    ns.modalTitle.textContent = title;
+    ns.modalBody.innerHTML = html;
+    ns.modalActions.innerHTML = '';
+    (actions || []).forEach(function(a){
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = a.primary ? 'wyc-btn wyc-btn--primary' : 'wyc-btn wyc-btn--ghost';
+      b.textContent = a.label;
+      b.addEventListener('click', a.handler);
+      ns.modalActions.appendChild(b);
+    });
+    ns.modal.classList.add('is-on');
+  }
+  function closeModal(){ ns.modal.classList.remove('is-on'); }
+  ns.modalClose.addEventListener('click', closeModal);
+  ns.modal.addEventListener('click', function(e){ if(e.target === ns.modal) closeModal(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeModal(); });
+
+  /* 卡片操作：点赞、收藏、分享、作者 */
+  document.addEventListener('click', function(e){
+    var btn = e.target.closest('.wyc-op');
+    if(!btn) return;
+    var action = btn.getAttribute('data-action');
+
+    if(action === 'like'){
+      var countEl = btn.querySelector('span');
+      var base = parseInt(btn.getAttribute('data-count') || '0', 10);
+      var liked = btn.classList.toggle('is-liked');
+      btn.setAttribute('aria-pressed', liked ? 'true' : 'false');
+      btn.firstChild.textContent = liked ? '♥ ' : '♡ ';
+      if(countEl) countEl.textContent = (liked ? base + 1 : base).toLocaleString('zh-CN');
+      toast(liked ? '已点赞，感谢你的喜欢' : '已取消点赞');
+    }
+    else if(action === 'save'){
+      var saved = btn.classList.toggle('is-saved');
+      btn.setAttribute('aria-pressed', saved ? 'true' : 'false');
+      btn.textContent = saved ? '★ 已收藏' : '☆ 收藏';
+      toast(saved ? '已加入收藏，稍后可在个人中心查看' : '已取消收藏');
+    }
+    else if(action === 'share'){
+      var title = '王雨纯mm131 影像内容';
+      var card = btn.closest('.wyc-card');
+      if(card){
+        var h = card.querySelector('h3');
+        if(h) title = h.textContent.trim();
+      }
+      openModal('分享内容', '<p>「' + title + '」可在微信、微博或 QQ 中分享给朋友，也可以复制链接自行保存。</p>', [
+        {label:'复制标题', handler:function(){
+          if(navigator.clipboard && navigator.clipboard.writeText){
+            navigator.clipboard.writeText(title).then(function(){ toast('标题已复制到剪贴板'); closeModal(); }, function(){ toast('复制失败，请手动选择文字'); });
+          }else{
+            toast('当前环境不支持自动复制，请手动选择文字');
+          }
+        }},
+        {label:'分享到微信', primary:true, handler:function(){ toast('已生成分享提示，请在微信中粘贴'); closeModal(); }},
+        {label:'分享到微博', handler:function(){ toast('已复制分享文案，可前往微博发布'); closeModal(); }}
+      ]);
+    }
+    else if(action === 'author'){
+      var name = btn.getAttribute('data-name') || '创作者';
+      var field = btn.getAttribute('data-field') || '';
+      var intro = btn.getAttribute('data-intro') || '';
+      openModal(name + ' · 创作者档案',
+        '<p><strong>擅长领域：</strong>' + field + '</p><p>' + intro + '</p><p>该创作者长期与王雨纯mm131 平台合作，作品均经官方审校后发布，版权归创作者所有。</p>',
+        [{label:'关注创作者', primary:true, handler:function(){ toast('已关注 ' + name); closeModal(); }}]
+      );
+    }
+  });
+
+  /* 复制邮箱 */
+  var copyMail = document.getElementById('wycCopyMail');
+  if(copyMail){
+    copyMail.addEventListener('click', function(){
+      var mail = 'submit@wycmm131.studio';
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(mail).then(function(){ toast('投稿邮箱已复制'); }, function(){ toast('复制失败，请手动记录邮箱'); });
+      }else{
+        toast('投稿邮箱：' + mail);
+      }
+    });
+  }
+
+  /* 反馈弹窗 */
+  var fb = document.getElementById('wycFeedbackBtn');
+  if(fb){
+    fb.addEventListener('click', function(){
+      openModal('意见反馈', '<p>你的意见会直接进入品牌内容团队的收件箱。请描述具体问题或建议，我们会认真阅读并回复。</p>', [
+        {label:'我知道了', primary:true, handler:function(){ toast('感谢反馈，我们会尽快查看'); closeModal(); }}
+      ]);
+    });
+  }
+
+  /* 投稿说明 */
+  var sb = document.getElementById('wycSubmitBtn');
+  if(sb){
+    sb.addEventListener('click', function(){
+      openModal('投稿说明', '<p>投稿请包含：作品链接、时长与分辨率、拍摄与剪辑简述、创作者联系方式。</p><p>首次投稿建议选择十分钟以内的单条作品。团队会在五个工作日内回复，未通过也会给出具体建议。</p>', [
+        {label:'复制投稿邮箱', primary:true, handler:function(){
+          var mail = 'submit@wycmm131.studio';
+          if(navigator.clipboard && navigator.clipboard.writeText){
+            navigator.clipboard.writeText(mail).then(function(){ toast('投稿邮箱已复制'); closeModal(); }, function(){ toast('复制失败，请手动记录邮箱'); });
+          }else{
+            toast('投稿邮箱：' + mail);
+          }
+        }}
+      ]);
+    });
+  }
+
+  /* 回到顶部 */
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 560){ ns.topBtn.classList.add('is-on'); }
+    else{ ns.topBtn.classList.remove('is-on'); }
+  }, {passive:true});
+  ns.topBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* 导航高亮 */
+  var navLinks = Array.prototype.slice.call(ns.nav.querySelectorAll('a'));
+  var sections = navLinks.map(function(a){
+    var id = a.getAttribute('href');
+    return id && id.length > 1 ? document.querySelector(id) : null;
+  });
+  window.addEventListener('scroll', function(){
+    var pos = window.scrollY + 170;
+    var idx = 0;
+    sections.forEach(function(sec, i){
+      if(sec && sec.offsetTop <= pos) idx = i;
+    });
+    navLinks.forEach(function(a, i){ a.classList.toggle('is-active', i === idx); });
+  }, {passive:true});
+})();
+</script>
+</body>
+  </html>
